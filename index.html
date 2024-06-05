@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search by book name:</h1>
+        <input type="text" id="searchInput" placeholder="Enter book name" oninput="filterBooks()">
+        <button id="bookshelfBtn" onclick="toggleBookshelf()">My Bookshelf</button>
+        <div id="bookList">
+            <div class="bookCard" data-title="The Lord of the Rings">
+                <p><strong>Book Title:</strong> The Lord of the Rings</p>
+                <p><strong>Edition Count:</strong> 159</p>
+                <button onclick="addToBookshelf(this)">Add to Bookshelf</button>
+            </div>
+            <div class="bookCard" data-title="The Lord of the Rings">
+                <p><strong>Book Title:</strong> The Lord of the Rings</p>
+                <p><strong>Edition Count:</strong> 159</p>
+                <button onclick="addToBookshelf(this)">Add to Bookshelf</button>
+            </div>
+            <div class="bookCard" data-title="The Fellowship of the Ring">
+                <p><strong>Book Title:</strong> The Fellowship of the Ring</p>
+                <p><strong>Edition Count:</strong> 249</p>
+                <button onclick="addToBookshelf(this)">Add to Bookshelf</button>
+            </div>
+            <div class="bookCard" data-title="The Two Towers">
+                <p><strong>Book Title:</strong> The Two Towers</p>
+                <p><strong>Edition Count:</strong> 212</p>
+                <button onclick="addToBookshelf(this)">Add to Bookshelf</button>
+            </div>
+            <div class="bookCard" data-title="Official the Lord of the Rings 2022 Calendar">
+                <p><strong>Book Title:</strong> Official the Lord of the Rings 2022 Calendar</p>
+                <p><strong>Edition Count:</strong> 1</p>
+                <button onclick="addToBookshelf(this)">Add to Bookshelf</button>
+            </div>
+        </div>
+        <div id="bookshelf" style="display: none;">
+            <h2>My Bookshelf</h2>
+            <div id="bookshelfList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
